@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  background: #fff;
+  height: toRem(70);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  .header-left {
+    width: toRem(240);
+    background-color: gray;
+    padding: toRem(15);
+    img {
+      width: toRem(40);
+    }
+  }
+
+  .header-center {
+    padding: toRem(16);
+    margin: auto 0px;
+
+    & > * {
+      margin: auto 0px;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    margin-left: auto;
+    padding: toRem(16);
+
+    .icon {
+      color: $gray-700;
+      margin: auto 5px;
+      border: none;
+      background: white;
+      svg {
+        width: toRem(24);
+        height: toRem(24);
+      }
+    }
+  }
+}

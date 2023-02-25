@@ -1,1 +1,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./core/mixins.scss";
+@import "./core/functions.scss";
+@import "./core/type.scss";
+@import "./core/variables.scss";
+@import "./layout/admin/admin.scss";

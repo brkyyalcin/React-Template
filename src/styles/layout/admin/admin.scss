@@ -3,6 +3,7 @@
   height: 100vh;
   padding: toRem(16);
   transition: all 0.25s;
+  background-color: #f9fafa;
   &.active {
     margin-left: toRem(240);
   }

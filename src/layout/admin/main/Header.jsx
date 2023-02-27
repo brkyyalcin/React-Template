@@ -11,14 +11,17 @@ import * as BiIcons from "react-icons/bi";
 import * as TbIcons from "react-icons/tb";
 import * as GiIcons from "react-icons/gi";
 import * as MdIcons from "react-icons/md";
+import { GetWord } from "../../../utils";
 
 const Header = () => {
   const dispatch = useDispatch();
   return (
     <header>
       <div className="header-left ">
-        <div className="d-flex justify-content-between">
-          <div className="">los</div>
+        <div className="d-flex justify-content-between alignt">
+          <div className="">
+            <p>Logo</p>
+          </div>
           <div className="text-white mt-auto mb-auto">
             <button
               className="navbar-toggler"
@@ -30,10 +33,26 @@ const Header = () => {
         </div>
       </div>
       <div className="header-center d-none d-md-inline">
-        <p>Opet Akarca Petrol </p>
+        <p>Dashboard</p>
       </div>
       <div className="header-right">
-        <button
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control"
+            placeholder={GetWord("ara...")}
+          />
+          <span class="input-group-text" id="basic-addon2">
+            <AiIcons.AiOutlineSearch className="input-icon" />
+          </span>
+        </div>
+        <a className="icon">
+          <MdIcons.MdNotifications />
+        </a>
+        <a className="icon">
+          <MdIcons.MdExitToApp />
+        </a>
+        {/* <button
           className="icon"
           onClick={() => {
             if (!document.fullscreenElement) {
@@ -66,7 +85,7 @@ const Header = () => {
               className="rounded-circle"
             />
           </a>
-        </Link>
+        </Link> */}
       </div>
     </header>
   );

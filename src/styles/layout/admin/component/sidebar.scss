@@ -1,0 +1,66 @@
+aside {
+  bottom: 0;
+  position: fixed;
+  top: toRem(80);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s;
+  overflow-y: hidden;
+  left: -500%;
+  width: toRem(290);
+  z-index: 999;
+  &.active {
+    left: 0;
+  }
+
+  nav {
+    .nav-header {
+      padding-left: 50px;
+      margin-top: 11px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.2;
+      letter-spacing: normal;
+      color: $dark;
+    }
+    .nav-link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 14px 15px 14px 50px;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      color: $secondary;
+
+      .nav-icon {
+        width: 22px;
+        margin-right: 15px;
+        font-size: 22px;
+        justify-content: left;
+      }
+
+      &:hover {
+        color: $primary;
+        padding: 14px 15px 14px 45px;
+        border-left: $primary solid 5px;
+      }
+
+      &.active {
+        color: $primary;
+        padding: 14px 15px 14px 45px;
+        border-left: $primary solid 5px;
+      }
+
+      .nav-drop {
+        font-size: 14px;
+        position: absolute;
+        right: 25px;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    position: absolute;
+  }
+}

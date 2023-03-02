@@ -1,0 +1,22 @@
+$font-url: "../../../public/dist/fonts";
+
+@mixin font-face($font-name) {
+  @font-face {
+    font-family: $font-name;
+    src: local($font-name),
+      url("#{$font-url}/#{$font-name}.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@mixin font-face-ttf($font-name) {
+  @font-face {
+    font-family: $font-name;
+    src: local($font-name), url("#{$font-url}/#{$font-name}.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}

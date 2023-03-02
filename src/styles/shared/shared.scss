@@ -1,0 +1,17 @@
+html > * {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  color: $dark;
+}
+
+.text {
+  &-primary {
+    color: $primary;
+  }
+  &-secondary {
+    color: $secondary;
+  }
+}

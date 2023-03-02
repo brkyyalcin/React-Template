@@ -1,0 +1,43 @@
+.auth {
+  margin: 0;
+  background-image: url("../../../../public/Assets/images/auth_bg.png   ");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .mbt-3 {
+    margin-top: toRem(10);
+    margin-bottom: toRem(10);
+  }
+  .back-color {
+    height: 100vh;
+    width: 100vw;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 0;
+    .form-div {
+      margin-top: 180px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 78px 66px;
+      width: 540px;
+      h3 {
+        font-size: 48px;
+        font-weight: 900;
+        margin: 0px;
+      }
+      h4 {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0px;
+      }
+
+      .input {
+        &-group {
+        }
+      }
+    }
+  }
+}

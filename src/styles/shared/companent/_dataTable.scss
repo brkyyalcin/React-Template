@@ -1,0 +1,81 @@
+.dataTable {
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
+    input {
+      border: 1px solid #eeeeee;
+      padding: 10px 15px 10px 15px;
+      border-radius: 19.5px;
+      border-right: 0px;
+      outline: none;
+      color: $secondary;
+
+      &:focus {
+        border: 2px solid gray;
+      }
+      &:focus-visible {
+        border: 2px solid gray;
+      }
+    }
+    .input-group-text {
+      margin: 5px 0px 5px -30px;
+      background: #fff;
+      color: $secondary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .table {
+    overflow-x: auto;
+    margin-top: 20px;
+    table {
+      width: 100%;
+      border-radius: 19px 19px 0px 0px;
+      border-collapse: collapse;
+      min-width: 800px;
+      overflow: hidden;
+
+      thead {
+        background-color: white;
+        font-size: 16px;
+        color: $dark;
+        font-weight: bold;
+        tr {
+          th {
+            padding: 31px 21px 10px 21px;
+          }
+        }
+      }
+
+      tbody {
+        font-size: 16px;
+        color: $dark;
+        font-weight: normal;
+        tr {
+          td {
+            padding: 26px 5px;
+          }
+        }
+      }
+      .text {
+        &-left {
+          text-align: start;
+        }
+        &-center {
+          text-align: center;
+        }
+        &-right {
+          text-align: end;
+        }
+        &-black {
+          color: black;
+        }
+      }
+    }
+  }
+}

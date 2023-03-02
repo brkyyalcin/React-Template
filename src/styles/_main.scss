@@ -3,5 +3,8 @@
 @import "./core/functions.scss";
 @import "./core/type.scss";
 @import "./core/variables.scss";
+@import "./shared/companent/_button.scss";
+@import "./shared/companent/_dataTable.scss";
 @import "./shared/shared.scss";
 @import "./layout/admin/admin.scss";
+@import "./layout/auth/auth.scss";

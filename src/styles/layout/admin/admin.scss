@@ -1,11 +1,11 @@
 .wrap {
   margin-top: toRem(70);
   height: 100vh;
-  padding: toRem(16);
+  padding: toRem(20) toRem(50);
   transition: all 0.25s;
   background-color: #f9fafa;
   &.active {
-    margin-left: toRem(240);
+    margin-left: toRem(290);
   }
 }
 

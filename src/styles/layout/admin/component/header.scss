@@ -12,7 +12,7 @@ header {
     background-color: #c2d5f9;
     padding: 0 toRem(15);
     p {
-      color: #447ff4;
+      color: $primary;
       font-size: 32px;
       font-weight: bold;
       margin: 0px;
@@ -49,6 +49,9 @@ header {
         padding: 10px 15px 10px 15px;
         border-radius: 19.5px;
         border-right: 0px;
+        outline: none;
+        color: $secondary;
+
         &:focus {
           border: 2px solid gray;
         }
@@ -58,7 +61,8 @@ header {
       }
       .input-group-text {
         margin: 5px 0px 5px -30px;
-        background: white;
+        background: #fff;
+        color: $secondary;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -66,7 +70,7 @@ header {
     }
 
     .icon {
-      color: #a8aabc;
+      color: $secondary;
       margin: auto 15px;
       border: none;
       background: white;

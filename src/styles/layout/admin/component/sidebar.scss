@@ -22,7 +22,7 @@ aside {
       font-weight: bold;
       line-height: 1.2;
       letter-spacing: normal;
-      color: #434655;
+      color: $dark;
     }
     .nav-link {
       text-decoration: none;
@@ -32,7 +32,7 @@ aside {
       font-size: 14px;
       font-weight: bold;
       font-stretch: normal;
-      color: #a8aabc;
+      color: $secondary;
 
       .nav-icon {
         width: 22px;
@@ -42,15 +42,15 @@ aside {
       }
 
       &:hover {
-        color: #447ff4;
+        color: $primary;
         padding: 14px 15px 14px 45px;
-        border-left: #447ff4 solid 5px;
+        border-left: $primary solid 5px;
       }
 
       &.active {
-        color: #447ff4;
+        color: $primary;
         padding: 14px 15px 14px 45px;
-        border-left: #447ff4 solid 5px;
+        border-left: $primary solid 5px;
       }
 
       .nav-drop {
